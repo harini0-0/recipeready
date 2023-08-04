@@ -1,0 +1,10 @@
+.signup-container{
+    width: 30%;
+    margin-right: auto; 
+    margin-left: auto; 
+    margin-top: 10%;
+    background-color: #fc8019; 
+    padding: 40px;
+    border-radius: 40px;
+    color: white;
+}

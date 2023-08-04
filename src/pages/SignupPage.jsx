@@ -1,26 +1,37 @@
 import React from "react";
+import "./SignupPage.css"; 
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function SignupPage(){
     
-    const handleClick = () => {
-        //we trigger firebase auth whatever
-    }
-    
     return (
         <div className="signup-page">
-            <><h1 style={{ textAlign: 'center' }}>RecipeReady</h1><h2 style={{ textAlign: 'center' }}>Sign Up</h2></>
-            <form>
-                <input type="text" placeholder="UserName" />
-                <input type="text" placeholder="Phone Number" />
-                <label for="usertype">Select User Type:</label>
-                <select id="usertype" name="usertype">
-                    <option value="customer">Customer</option>
-                    <option value="seller">Seller (Cloud Kitchen)</option>
-                    <option value="delivery_executive">Delivery Executive</option>
-                </select>
-                <Button onClick={handleClick}>Submit</Button>
-            </form>
+            <div className="signup-container">
+                <Form>
+                    <h1>Sign Up!</h1>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Enter Your User Name:</Form.Label>
+                        <Form.Control type="email" placeholder="Username" />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3">
+                        <Form.Label>Customer Type</Form.Label>
+                        <Form.Select>
+                            <option>Customer</option>
+                            <option>Cloud Kitchen</option>
+                            <option>Delivery</option>
+                        </Form.Select>
+                    </Form.Group>
+
+                    <Form.Group className="mb-3">
+                        <Form.Label>Phone Number:</Form.Label>
+                        <Form.Control type="email" placeholder="Enter valid phone number" />
+                    </Form.Group>
+
+                    <Button type = "submit" variant="outline-light">Submit</Button>
+                </Form>
+            </div>
         </div>
     ); 
 }
