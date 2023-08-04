@@ -1,9 +1,15 @@
 import React from "react";
+import './LoginPage.css'; 
 
 function LoginPage(){
     return (
         
-        <><h1 style={{ textAlign: 'center' }}>RecipeReady</h1><h2 style={{ textAlign: 'center' }}>Login</h2></>
+        <>
+            <div className = "loginpage">
+                <h1 className = "loginpage-heading" style={{ textAlign: 'center' }}>RecipeReady</h1>
+                <h2 className = "loginpage-heading" style={{ textAlign: 'center' }}>Login</h2>
+            </div>
+        </>
         
     ); 
 }
