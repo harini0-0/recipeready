@@ -9,7 +9,8 @@ function SignupPage(){
         <div className="signup-page">
             <div className="signup-container">
                 <Form>
-                    <h1>Sign Up!</h1>
+                    <h1>RecipeReady</h1>
+                    <h2>Sign Up!</h2>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Enter Your User Name:</Form.Label>
                         <Form.Control type="email" placeholder="Username" />
