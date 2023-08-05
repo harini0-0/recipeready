@@ -1,0 +1,30 @@
+import { Link } from "react-router-dom";
+import React from "react";
+
+export const Header = (props) => {
+  return (
+    <header id="header">
+      <div className="intro">
+        <div className="overlay">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2 intro-text">
+                <h1>
+                  {props.data ? props.data.title : "Loading"}
+                  <span></span>
+                </h1>
+                <p>{props.data ? props.data.paragraph : "Loading"}</p>
+                <Link to ={ "/login"}><a className="btn btn-custom btn-lg page-scroll">
+                  Login
+                </a> </Link> {" "}
+                <Link to={"/signup"}><a className="btn btn-custom btn-lg page-scroll">
+                  Sign up
+                </a> </Link> {" "}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
