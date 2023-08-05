@@ -12,7 +12,7 @@ function SignupPage(){
     const [email, setEmail] = useState(""); 
     const [password, setPassword] = useState(""); 
     const [region, setRegion] = useState(""); 
-    const [customerType, setCustomerType] = useState(-1); 
+    const [customerType, setCustomerType] = useState(0); 
 
 
     const signUp = () => {
@@ -20,7 +20,7 @@ function SignupPage(){
             // Signed in 
             const user = userCredential.user;
             console.log(user);
-
+            const documentName = user.uid; 
             //create the new user here:
             const newUser = {
                 availability : 1, 
@@ -33,7 +33,17 @@ function SignupPage(){
 
             //add our user to database
             try {
-                await UserDataService.addUser(newUser);  
+                await UserDataService.addUser(documentName, newUser); 
+                //redirect on successful login 
+                if(customerType === 0){
+                    window.location.href="/customerlanding"; 
+                }
+                else if(customerType === 1){
+                    window.location.href="/cloudkitchenlanding"; 
+                }
+                else if(customerType === 2){
+                    window.location.href="/deliverylanding"; 
+                }
             }catch (err) {
                 console.log(err); 
             }

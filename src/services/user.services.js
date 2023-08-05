@@ -1,14 +1,19 @@
 import { db } from "../firebase"
 import {
-  collection,
-  addDoc,
+  doc,
+  setDoc,
+  getDoc
 } from "firebase/firestore";
-const userCollectionRef = collection(db, "users");
 
 class UserDataService {
-    addUser = (newUser) => {
-      return addDoc(userCollectionRef, newUser);
+
+    addUser = (documentName, newUser) => {
+      return setDoc(doc(db, "users", documentName), newUser);
     };
+
+    fetchUserData = (documentName) => {
+      return getDoc(doc(db, "users", documentName)); 
+    }
   }
 
 export default new UserDataService();
