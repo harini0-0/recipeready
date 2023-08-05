@@ -6,6 +6,9 @@ import "./RecipeInput.css";
 import IngredientRender from "./IngredientRender";
 import InstructionRender from "./InstructionRender";
 import RecipeDataService from "../services/recipe.services";
+import { collection, addDoc, updateDoc, doc} from "firebase/firestore"; 
+import { db } from "../firebase"
+import { updateCurrentUser } from "firebase/auth";
 
 function RecipeInput(props){
 
@@ -21,11 +24,20 @@ function RecipeInput(props){
     const [quantity, setQuantity] = useState("");
     const [measure, setMeasure] = useState("");
     const [ingList, setIngList] = useState([]); 
+    const [recipeId, setRecipeId] = useState(""); 
 
     //instructions
     const [instruction, setInstruction] = useState(""); 
     const [instructions, setInstructions] = useState([]); 
 
+    const updateUser = async (docRef) => {
+        const userdocRef = doc(db, "users", props.uid); 
+
+        console.log(userdocRef); 
+        const user = await updateDoc(userdocRef, {
+            recipeId : [...recipeId, docRef]
+        });
+    }
 
     const addRecipeToDatabase = async () => {
 
@@ -43,12 +55,13 @@ function RecipeInput(props){
             }, 
             ingredients : ingList
         }
-        try {
-            await RecipeDataService.addRecipe(newRecipe);
-            window.location.href="/cloudkitchenlanding"; 
-        }catch (err) {
-            console.log(err); 
-        }
+
+        const docRef = await addDoc(collection(db, "recipe"), newRecipe);
+        updateUser(docRef.id); 
+        console.log("Document written with ID: ", docRef.id);
+        window.location.href="/cloudkitchenlanding"; 
+
+       
     }
 
     const addItems = () => {

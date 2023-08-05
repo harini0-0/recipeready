@@ -1,0 +1,60 @@
+.first-container{
+
+    padding-top: 80px;
+    /* background-color: rgb(241, 162, 14); */
+    background-image: url("https://realfood.tesco.com/media/images/RFO-1400x919-DavidsCurry-03186c71-75ff-4976-bf1f-24ca8c9aa06c-0-1400x919.jpg"); 
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXg5Qqo7Za6WpvnUngppbPz3GVDc2sO8-bQ&usqp=CAU"); */
+    padding-bottom: 80px;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.cont-h1{
+    font-size: 3.5rem;
+    font-weight: bold !important;
+}
+
+.second-container{
+    color: rgb(209, 147, 33);
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-around; 
+    padding-top: 30px; 
+    padding-bottom: 30px;
+}
+
+.third-container{
+    display: flex;
+    height: 100%;
+}
+
+.ingredients-side{
+    font-size: 2rem;
+    /* height: 100vh; */
+    width: 35%;
+    background-color: black;
+    color: white;
+    padding-top: 40px;
+}
+
+.ingredient-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;;
+}
+
+.instruction-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.instructions-side{
+    text-align: left !important;
+    width: 65%;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid black;
+}
