@@ -1,3 +1,17 @@
+.recipe-input{
+    background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+}
 .recipeinput-container{
-    width: 90%;
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(171, 169, 169);
+    opacity: 95%;
+    padding: 40px;
+}
+
+.ri-container{
+    color: white; 
+    font-size: large;
+    font-weight: boler
 }

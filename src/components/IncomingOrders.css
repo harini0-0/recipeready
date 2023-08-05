@@ -1,0 +1,33 @@
+.incoming-orders{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(13, 198, 13);
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.io-bottom{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.io-child{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.io-h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.incoming-orders :hover{
+    cursor: pointer;
+}
