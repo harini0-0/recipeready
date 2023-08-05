@@ -9,6 +9,7 @@ import CustomerLanding from "./pages/CustomerLanding";
 import DeliveryLanding from "./pages/DeliveryLanding"; 
 import Livetask from "./Livetask";
 import Neworder from "./Neworder";
+import RecipeInput from "./components/RecipeInput"; 
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/deliverylanding" element={<DeliveryLanding />} />
           <Route path="/livetask" element ={<Livetask />}  />
           <Route path="/neworder" element={<Neworder />}  />
+          <Route path="/recipeinput" element={<RecipeInput />}  />
         </Routes>
       </div>
     </Router>
