@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 export const Header = (props) => {
@@ -13,18 +14,12 @@ export const Header = (props) => {
                   <span></span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                <a
-                  // href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
+                <Link to ={ "/login"}><a className="btn btn-custom btn-lg page-scroll">
                   Login
-                </a>{" "}
-                <a
-                  // href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
+                </a> </Link> {" "}
+                <Link to={"/signup"}><a className="btn btn-custom btn-lg page-scroll">
                   Sign up
-                </a>{" "}
+                </a> </Link> {" "}
               </div>
             </div>
           </div>
