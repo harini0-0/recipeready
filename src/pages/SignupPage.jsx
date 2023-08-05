@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import {auth} from "../firebase"; 
 import UserDataService from "../services/user.services";
+import RecipeInput from "../components/RecipeInput";
 
 function SignupPage(){  
     
@@ -13,7 +14,8 @@ function SignupPage(){
     const [password, setPassword] = useState(""); 
     const [region, setRegion] = useState(""); 
     const [customerType, setCustomerType] = useState(0); 
-
+    const [showForm, setShowForm] = useState(false); 
+    const [uid, setUid] = useState(""); 
 
     const signUp = () => {
         createUserWithEmailAndPassword(auth, email, password).then(async (userCredential) => {
@@ -21,7 +23,7 @@ function SignupPage(){
             const user = userCredential.user;
             console.log(user);
             const documentName = user.uid; 
-            //create the new user here:
+
             const newUser = {
                 availability : 1, 
                 recipeID : "", 
@@ -39,7 +41,8 @@ function SignupPage(){
                     window.location.href="/customerlanding"; 
                 }
                 else if(customerType === 1){
-                    window.location.href="/cloudkitchenlanding"; 
+                    setUid(user.uid); 
+                    setShowForm(true); 
                 }
                 else if(customerType === 2){
                     window.location.href="/deliverylanding"; 
@@ -77,7 +80,7 @@ function SignupPage(){
                                 setCustomerType(0); 
                             }
                             else if(e.target.value === "Cloud Kitchen"){
-                                setCustomerType(1); 
+                                setCustomerType(1);    
                             }
                             else{
                                 setCustomerType(2); 
@@ -93,9 +96,8 @@ function SignupPage(){
                         <Form.Label>Enter Your Region</Form.Label>
                         <Form.Control onChange={(e) => {setRegion(e.target.value)}} type="text" placeholder="Region" />
                     </Form.Group>
-
-
                     <Button onClick={signUp} variant="outline-light">Submit</Button>
+                    {showForm ? <RecipeInput uid = {uid}/> : ""}
                 </Form>
             </div>
         </div>
