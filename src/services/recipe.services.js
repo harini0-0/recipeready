@@ -9,8 +9,9 @@ const recipeCollectionRef = collection(db, "recipe");
 
 class RecipeDataService {
     addRecipe = (newRecipe) => {
-        return addDoc(recipeCollectionRef, newRecipe)
+        return addDoc(recipeCollectionRef, newRecipe)  
     }
+
   }
 
 export default new RecipeDataService();

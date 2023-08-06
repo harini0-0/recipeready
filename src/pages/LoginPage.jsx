@@ -18,10 +18,11 @@ function LoginPage(){
             const documentName = user.uid; 
             try {
                 const userData = await UserDataService.fetchUserData(documentName);
-                const customerType = userData.data().type; 
+                const customerType = userData.data().type;
+                const customerRegion = userData.data().region; 
 
                 if(customerType === 0){
-                    window.location.href="/customerlanding"; 
+                    window.location.href=`/customerlanding?id=${documentName}&region=${customerRegion}`; 
                 }
                 else if(customerType === 1){
                     window.location.href="/cloudkitchenlanding"; 
