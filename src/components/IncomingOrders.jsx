@@ -2,8 +2,7 @@ import React from "react";
 import "./IncomingOrders.css"; 
 import {AiFillFire} from "react-icons/ai"; 
 import {BiSolidTimeFive} from "react-icons/bi"; 
-import {GiMuscleUp} from "react-icons/gi"; 
-import {BsFillTrashFill} from "react-icons/bs"; 
+import {GiMuscleUp} from "react-icons/gi";  
 
 function IncomingOrders(){
     return(
