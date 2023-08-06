@@ -1,0 +1,6 @@
+.ingredient-list-container{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+}

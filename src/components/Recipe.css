@@ -1,0 +1,33 @@
+.recipe{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(224, 146, 1);
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.recipe-bottom{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.upper-child{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.recipe-h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.recipe :hover{
+    cursor: pointer;
+}

@@ -1,0 +1,6 @@
+.instruction-list-container{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin: 20px 50px;
+    font-size: 15px;
+}
