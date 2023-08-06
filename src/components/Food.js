@@ -20,10 +20,10 @@ const Food = () => {
         )
     }
 
+
     const handleClick = () => {
         window.location.href = "/itemspecific"; 
     }
-
     return (
         <div className='max-w-[1240px] m-auto px-4 py-12'>
             <h1 className='text-orange-600 font-bold text-4xl text-center'>
@@ -42,6 +42,7 @@ const Food = () => {
                             transition={{ duration: 0.1 }}
                             key={item.id}
                             className="border shadow-lg rounded-lg hover:scale-105 duration-500 cursor-pointer">
+
                             <img 
                             onClick = {(index)=> {window.location.href = `/itemspecific?id=${index}`; }} 
                             className='w-full h-[150px] md:h-[200px] object-cover rounded-t-lg' 

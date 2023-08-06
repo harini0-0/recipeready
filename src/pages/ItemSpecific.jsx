@@ -25,7 +25,7 @@ function ItemSpecificPage(){
             <div className="first-container">
             
                 <h1 className="cont-h1">RECIPE FOR {recipeDummy[0].name}</h1>  
-                
+
             </div>
             <div className="second-container">
                 <div className="item-time">
@@ -61,6 +61,7 @@ function ItemSpecificPage(){
                 <div className="ingredients-side">
                     <h2>INGREDIENTS</h2>
                     <div className="ingredient-list">
+
                         {recipeDummy[0].ingredients.map((ingredient, index) => (
                            <IngredientDisplay key={index} index={index} ingName={ingredient.ingredientName} quantity={ingredient.quantity} measure = {ingredient.measure}/>
                              

@@ -1,21 +1,21 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Recipe ready",
+    "paragraph": "Your one-step solution: Select,Cook, and Enjoy!"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Welcome to our food delivery app, your go-to source for the freshest, high-quality ingredients delivered straight to your doorstep. Cook with confidence, creativity, and convenience as we bring you a delightful cooking experience like never before. Elevate your culinary skills and savor the satisfaction of preparing delicious meals with our carefully selected, farm-fresh ingredients.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Quality Assurance",
+      "Recipe Variety",
+      "Healthier Choices",
+      "Culinary Freedom"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Sustainable Sourcing",
+      "Customization",
+      "Cost-Effective",
+      "Cooking Fun"
     ]
   },
   "Gallery": [
@@ -67,34 +67,35 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-youtube",
+      "name": "Youtube",
+      "text": "Our YouTube channel serves as a valuable platform, offering a diverse range of easy cooking tutorials and recipes suitable for both beginners and seasoned cooks.."
+    },
+    
+    {
+      "icon": "fa fa-google play store",
+      "name": "Google Play Store",
+      "text": "Download the app to explore a wide range of delicious recipes at your fingertips. Enjoy cooking with Ready Recipe!"
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-instagram",
+      "name": "Instagram",
+      "text": "Ready Recipe's food community thrives with a diverse array of easy cooking tutorials and recipes, catering to all skill levels, and welcoming every food enthusiast."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "",
+      "name": "",
+      "text": ""
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "",
+      "name": "",
+      "text": ""
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "",
+      "name": "",
+      "text": ""
     }
   ],
   "Testimonials": [
@@ -162,23 +163,24 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Ask Healthily",
+      "text": "Look no further! I'm your friendly Food Chat Bot, here to serve you a delightful experience. Just type away your cravings or questions, and let's get cooking!"
     },
     {
       "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Appetizing Alert",
+      "text": " Stay tuned for a feast of flavors and gastronomic adventures! "
+    },
+    {
+      "icon": "fa fa-globe",
+      "title": "Cuisine Tours",
+      "text": "Embark on a Culinary Journey: Explore Global Flavors with Cuisine Tours!"
     },
     {
       "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Feast-Friendly Feeds",
+      "text": "Creating Culinary Connections: One Recipe at a Time with our Feast Friendly Feeds where you can start blog series exploring various aspects of cooking, such as cooking techniques, kitchen tools, or the history of certain dishes"
     }
+    
   ]
 }

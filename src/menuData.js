@@ -1,3 +1,4 @@
+
 export const recipeDummy = [
   {
     name: "Veg Biryani",
@@ -101,7 +102,6 @@ export const recipeDummy = [
     ]
   }
 ]
-
 
 export const data = [
     {
