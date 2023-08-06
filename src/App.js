@@ -10,6 +10,8 @@ import DeliveryLanding from "./pages/DeliveryLanding";
 import Livetask from "./Livetask";
 import Neworder from "./Neworder";
 import RecipeInput from "./components/RecipeInput"; 
+import ItemSpecificPage from './pages/ItemSpecific';
+import Customization from './pages/Customization';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/livetask" element ={<Livetask />}  />
           <Route path="/neworder" element={<Neworder />}  />
           <Route path="/recipeinput" element={<RecipeInput />}  />
+          <Route path="/itemspecific" element={<ItemSpecificPage />}  />
+          <Route path="/customization" element={<Customization />}  />
         </Routes>
       </div>
     </Router>

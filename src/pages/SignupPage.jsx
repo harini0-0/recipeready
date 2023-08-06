@@ -6,7 +6,6 @@ import Form from 'react-bootstrap/Form';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import {auth} from "../firebase"; 
 import UserDataService from "../services/user.services";
-import RecipeInput from "../components/RecipeInput";
 
 function SignupPage(){  
     
@@ -14,7 +13,6 @@ function SignupPage(){
     const [password, setPassword] = useState(""); 
     const [region, setRegion] = useState(""); 
     const [customerType, setCustomerType] = useState(0); 
-    const [showForm, setShowForm] = useState(false); 
     const [uid, setUid] = useState(""); 
 
     const signUp = () => {
@@ -42,7 +40,8 @@ function SignupPage(){
                 }
                 else if(customerType === 1){
                     setUid(user.uid); 
-                    setShowForm(true); 
+                    // setShowForm(true); 
+                    window.location.href="/recipeinput"; 
                 }
                 else if(customerType === 2){
                     window.location.href="/deliverylanding"; 
@@ -97,7 +96,7 @@ function SignupPage(){
                         <Form.Control onChange={(e) => {setRegion(e.target.value)}} type="text" placeholder="Region" />
                     </Form.Group>
                     <Button onClick={signUp} variant="outline-light">Submit</Button>
-                    {showForm ? <RecipeInput uid = {uid}/> : ""}
+                    {/* {showForm ? <RecipeInput uid = {uid}/> : ""} */}
                 </Form>
             </div>
         </div>
