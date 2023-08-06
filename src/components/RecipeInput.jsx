@@ -5,10 +5,8 @@ import Button from 'react-bootstrap/Button';
 import "./RecipeInput.css"; 
 import IngredientRender from "./IngredientRender";
 import InstructionRender from "./InstructionRender";
-import RecipeDataService from "../services/recipe.services";
 import { collection, addDoc, updateDoc, doc} from "firebase/firestore"; 
 import { db } from "../firebase"
-import { updateCurrentUser } from "firebase/auth";
 
 function RecipeInput(props){
 
@@ -132,9 +130,11 @@ function RecipeInput(props){
                         <Form.Control className="ri-container" value={quantity} onChange = {(e) => {setQuantity(e.target.value);}} type="number" placeholder="Quantity" />
                         <Form.Control className="ri-container" value={measure} onChange = {(e) => {setMeasure(e.target.value);}} type="text" placeholder="Cups/Grams/Tbsps/Tsps" />
                     </Form.Group>
-                    {ingList.map((item, index) => (
-                                <IngredientRender key={index} index={index} ingredientName = {item.ingredientName} quantity={item.quantity} measure = {item.measure}/>
-                            ))}
+                    <div className="ingList">
+                        {ingList.map((item, index) => (
+                                    <IngredientRender key={index} index={index} ingredientName = {item.ingredientName} quantity={item.quantity} measure = {item.measure}/>
+                                ))}
+                    </div>
                     <Button size="lg" onClick ={addItems} variant="outline-light">Add</Button>
 
 
@@ -142,9 +142,11 @@ function RecipeInput(props){
                         <Form.Label className="ri-container">Enter Instructions:</Form.Label>
                         <Form.Control className="ri-container" value={instruction} onChange = {(e) => {setInstruction(e.target.value);}} type="text" placeholder="Type instructions here.." />
                     </Form.Group>
+                    <div className="instructionList">
                     {instructions.map((instruction, index) => (
                             <InstructionRender key={index} index={index} instruction = {instruction}/>
                         ))}
+                    </div>
                     <Button size="lg" onClick = {addInstructions} variant="outline-light">Add</Button>
                     <Button size="lg" onClick={addRecipeToDatabase} variant="outline-light">Add the recipe!</Button>
                 </Form>
