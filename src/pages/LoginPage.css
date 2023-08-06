@@ -8,3 +8,8 @@
     color: white;
     border-radius: 40px;
 }
+.login-page{
+    background: linear-gradient(to right, #db6a14 0%, #C3A17A 100%);
+    height: 100%;
+    
+}

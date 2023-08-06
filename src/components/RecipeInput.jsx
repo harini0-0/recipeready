@@ -5,8 +5,10 @@ import Button from 'react-bootstrap/Button';
 import "./RecipeInput.css"; 
 import IngredientRender from "./IngredientRender";
 import InstructionRender from "./InstructionRender";
+
 import { collection, addDoc, updateDoc, doc} from "firebase/firestore"; 
 import { db } from "../firebase"
+
 
 function RecipeInput(props){
 
